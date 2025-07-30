@@ -8,19 +8,22 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem; /* Already good */
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
+
 .title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -30,7 +33,7 @@ body {
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto 3rem;
   line-height: 1.6;
@@ -39,11 +42,14 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
   width: 100%;
   margin-bottom: 3rem;
+  padding: 0 1rem; /* ✅ This adds horizontal spacing */
+  box-sizing: border-box;
 }
+
 
 .card {
   background: white;
@@ -66,12 +72,12 @@ body {
 }
 
 .card-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
 }
 
-/* specific platform colors */
+/* Platform-specific colors */
 .card.website .card-icon,
 .card.website .card-title {
   color: #4f46e5; /* Indigo */
@@ -97,16 +103,14 @@ body {
   color: #ff0000;
 }
 
-.cta {
-  margin-top: 2rem;
-}
-
-
 .card.whatsapp .card-icon,
 .card.whatsapp .card-title {
   color: #25D366;
 }
 
+.cta {
+  margin-top: 2rem;
+}
 
 .button {
   background: linear-gradient(90deg, #facc15, #f472b6);
@@ -123,4 +127,74 @@ body {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   filter: brightness(1.1);
+}
+
+/* --- Responsive media queries --- */
+@media (max-width: 600px) {
+  .card-grid {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card-icon {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
 }

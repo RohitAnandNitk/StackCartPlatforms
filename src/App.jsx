@@ -46,7 +46,7 @@ function App() {
         <Card
           icon={<LinkedinIcon size={32} />}
           title="LinkedIn"
-          link="https://linkedin.com/company/stackcart"
+          link="https://www.linkedin.com/company/stackcart-in/posts/?feedView=all&viewAsMember=true"
           className="linkedin"
         />
 
