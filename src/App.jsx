@@ -14,6 +14,7 @@ import {
   Users,
   ShoppingCart,
   Rocket,
+  Award,
 } from "lucide-react";
 import "./App.css";
 
@@ -55,6 +56,13 @@ function App() {
       link: "http://stackcart.in",
       className: "website",
       description: "Explore our main hub",
+    },
+    {
+      icon: Award,
+      title: "Certificate Validation",
+      link: "https://stackcart-certify.vercel.app/",
+      className: "certificate",
+      description: "Verify work credentials",
     },
     {
       icon: Linkedin,

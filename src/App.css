@@ -288,7 +288,7 @@ html, body {
 /* Cards Grid */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -328,6 +328,10 @@ html, body {
 /* Card Backgrounds */
 .social-card.website {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.social-card.certificate {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
 }
 
 .social-card.linkedin {
