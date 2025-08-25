@@ -92,7 +92,7 @@ function Home() {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      link: "https://whatsapp.com/channel/0029VasVTHJLikgELcYtv405",
+      link: "https://wa.me/9289916169",
       className: "whatsapp",
       description: "Direct messaging",
     },
