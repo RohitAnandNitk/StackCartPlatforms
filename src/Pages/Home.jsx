@@ -24,6 +24,8 @@ import {
   RotateCcw,
   Info,
   Heart,
+  Twitter,
+  Code,
 } from "lucide-react";
 import "./Home.css";
 
@@ -67,6 +69,13 @@ function Home() {
       description: "Explore our main hub",
     },
     {
+      icon: Code,
+      title: "Code to Cart",
+      link: "http://stackcart.space",
+      className: "platform",
+      description: "Explore our Tech Hub",
+    },
+    {
       icon: Award,
       title: "Certificate Validation",
       link: "https://stackcart-certify.vercel.app/",
@@ -79,6 +88,13 @@ function Home() {
       link: "https://www.linkedin.com/company/stackcart-in/posts/?feedView=all&viewAsMember=true",
       className: "linkedin",
       description: "Professional network",
+    },
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      link: "https://whatsapp.com/channel/0029VasVTHJLikgELcYtv405",
+      className: "whatsapp",
+      description: "Direct messaging",
     },
     {
       icon: Instagram,
@@ -102,11 +118,11 @@ function Home() {
       description: "Video content",
     },
     {
-      icon: MessageCircle,
-      title: "WhatsApp",
-      link: "https://whatsapp.com/channel/0029VasVTHJLikgELcYtv405",
-      className: "whatsapp",
-      description: "Direct messaging",
+      icon: Twitter,
+      title: "Twitter",
+      link: "https://twitter.com/StackCart11",
+      className: "twitter",
+      description: "Join the conversation",
     },
   ];
 

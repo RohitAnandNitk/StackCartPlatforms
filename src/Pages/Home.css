@@ -302,6 +302,8 @@ html, body {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.5s ease;
+  /* height: 15rem;
+  width: 15rem; */
 }
 
 .social-card-link.loaded {
@@ -329,7 +331,10 @@ html, body {
 
 /* Card Backgrounds */
 .social-card.website {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #14b8a6, #84cc16); /* Cyan to Lime Green */
+}
+.social-card.platform {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6); /* Teal to Blue */
 }
 
 .social-card.certificate {
@@ -337,7 +342,7 @@ html, body {
 }
 
 .social-card.linkedin {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: linear-gradient(135deg, #0b265f, #1e40af);
 }
 
 .social-card.instagram {
@@ -354,6 +359,9 @@ html, body {
 
 .social-card.whatsapp {
   background: linear-gradient(135deg, #10b981, #059669);
+}
+.social-card.twitter {
+  background: linear-gradient(135deg, #1d9bf0, #50a9e4);
 }
 
 /* Card Border Effect */
