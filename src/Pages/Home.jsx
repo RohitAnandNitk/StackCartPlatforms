@@ -214,7 +214,12 @@ function Home() {
 
         {/* Call to Action */}
         <div className={`cta-section ${isLoaded ? "loaded" : ""}`}>
-          <button className="cta-button">
+          <button
+            className="cta-button"
+            onClick={() =>
+              (window.location.href = "https://www.stackcart.space/")
+            }
+          >
             Start Your Journey
             <ArrowRight className="cta-arrow" />
           </button>
@@ -339,7 +344,7 @@ function Home() {
               <div className="footer-contact">
                 <div className="footer-contact-item">
                   <Mail size={16} />
-                  <span>info@stackcart.in</span>
+                  <span>support@stackcart.in</span>
                 </div>
                 <div className="footer-contact-item">
                   <Phone size={16} />
