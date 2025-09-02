@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   z-index: 1000;
+  cursor: pointer;
+  /* i want to slide it little bit left */
+  transform: translateX(-30px);
 }
 
 /* Floating WhatsApp Button */
