@@ -71,14 +71,14 @@ function Home() {
     {
       icon: Code,
       title: "Code to Cart",
-      link: "http://stackcart.space",
+      link: "http://stackcart.tech",
       className: "platform",
       description: "Explore our Tech Hub",
     },
     {
       icon: Award,
       title: "Certificate Validation",
-      link: "https://stackcart-certify.vercel.app/",
+      link: "https://stackcart.space",
       className: "certificate",
       description: "Verify work credentials",
     },
@@ -217,7 +217,7 @@ function Home() {
           <button
             className="cta-button"
             onClick={() =>
-              (window.location.href = "https://www.stackcart.space/")
+              (window.location.href = "https://www.stackcart.tech/")
             }
           >
             Start Your Journey
