@@ -78,7 +78,7 @@ function Home() {
     {
       icon: Award,
       title: "Certificate Validation",
-      link: "https://stackcart.space",
+      link: "https://www.stackcart.space/",
       className: "certificate",
       description: "Verify work credentials",
     },
